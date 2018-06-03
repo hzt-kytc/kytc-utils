@@ -43,4 +43,11 @@ public class ResultDTO<T> {
 		this.reason = "";
 		this.data = data;
 	}
+	public ResultDTO(String code,String reason){
+		this.code = code;
+		this.reason = reason;
+	}
+	public Boolean getStatus(){
+		return "00000".equals( this.code );
+	}
 }
